@@ -1,13 +1,12 @@
 # d3-tutorial
 
-Original workshop from
-### CMU Tech4Society
+
+### CMU Tech4Society (inital workshop)
 http://www.tech4society.group/
 
-##Vector vs. raster graphics
+## Vector vs. raster graphics
 
-![Vector vs Raster Example]
-(http://www.apogeesigns.com/wp-content/uploads/2015/05/vector_raster.gif)
+![](http://www.apogeesigns.com/wp-content/uploads/2015/05/vector_raster.gif)
 
 #### Vector Graphics
 - Graphics calculated  mathematically using points,  lines, shapes
@@ -21,7 +20,7 @@ http://www.tech4society.group/
 - Best for photographs,  videos, other high-detail  graphics
 - Typical editing tool:  Adobe Photoshop
 
-##SVG
+## SVG
 - Scalable Vector Graphics
 - XML-based image format supported by all major  browsers; no plug-ins needed
 - Primarily used for vector graphics
@@ -46,15 +45,19 @@ http://www.tech4society.group/
 
 ### SVG Styling
 #### Via attributes
+
+~~~~
 <circle cx="25" cy="25" r="22" fill="yellow" stroke="orange" stroke-width="5" />
-
+~~~~
 #### Via CSS
+~~~~
 <circle cx="25" cy="25" r="22" style="stroke: #000000; fill: #00ff00;" />
-
+~~~~
 
 ### SVG animation
 
 #### Via <animate> element; change horizontal  position
+~~~~
 <circle id="my-circle" r="30" cx="50" cy="50"  fill="orange" />
 <animate
   xlink:href="#my-circle"
@@ -64,9 +67,10 @@ http://www.tech4society.group/
   dur="1s"
   begin="click" 
   fill="freeze" />
-
+~~~~
 
 #### Via CSS
+~~~~
 <circle id="my-circle" r="30" cx="50" cy="50"  fill="orange" />
 <style>
   #my-circle{
@@ -78,3 +82,4 @@ http://www.tech4society.group/
     r:50
   }
 </style>
+~~~~
