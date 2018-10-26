@@ -3,11 +3,15 @@
 
 #### CMU Tech4Society (inital workshop inspired by)
 http://www.tech4society.group/
-<img src="http://www.tech4society.group/wp-content/uploads/2017/09/logo.png" width="250">
+<div>
+<img src="http://www.tech4society.group/wp-content/uploads/2017/09/logo.png" width="200">
+</div>
 
 #### Data from WPRDC
 http://www.wprdc.org/
+<div>
 <img src="http://www.wprdc.org/wp-content/themes/wprdc-redesign/assets/images/plain_logo_rbg_cropped.svg" width="250">
+</div>
 
 ## Vector vs. raster graphics
 
