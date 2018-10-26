@@ -13,29 +13,38 @@ $(document).ready(function(){
               .on('mouseover', function(d,i){
                   var g = d3.select(this);
                   g.select('rect')
+                  .attr('stroke-width', 0)
+                  .attr('stroke', "black")
                   .transition()
-                  .duration(0)
-                  .attr('fill', (d,i) => d3.interpolatePurples(d/maxArrests));
+                  .duration(300)
+                  .attr('stroke-width', 3)
 
                   g.select('text')
                   .transition()
                   .duration(300)
-                  .attr('y', (d,i) => 450 - d/maxArrests*400)
-                  .attr('font-size', '12px')
-                  .transition()
-                  .duration(100)
-                  .attr('y', (d,i) => 450 - d/maxArrests*400+5)
-                  .attr('font-size', '10px');
+                  .attr('y', (d,i) => 450 - d/maxArrests*400 - 25)
+                  .attr('font-size', '22px')
               })
               .on('mouseout', function(d,i){
                   var g = d3.select(this);
                   g.select('rect')
                   .transition()
                   .duration(500)
-                  .attr('fill', (d,i) => d3.interpolatePiYG(d/maxArrests))
+                  .attr('stroke-width', 0);
+
+                  g.select('text')
+                  .transition()
+                  .duration(300)
+                  .attr('y', (d,i) => 450 - d/maxArrests*400 +5)
+                  .attr('font-size', '12px')
               });  //<g> is a svg tag for group of elements
   groups.append('rect')
         .attr('x', (d,i) => 20+i*32)
+        .attr('y', 450)
+        .transition()
+        .delay(function(d, i){
+          return i * 100;
+        })
         .attr('y', (d,i) => 450 - d/maxArrests*400)
         .attr('height', (d,i) => d/maxArrests*400)
         .attr('width', '25px')
@@ -43,6 +52,10 @@ $(document).ready(function(){
   groups.append('text')
         .text(function (d, i){return d;})
         .attr('x', function(d,i){return 20+i*32+25/2;})
+        .transition()
+        .delay(function(d, i){
+          return i * 100;
+        })
         .attr('y',(d,i) => 450 - d/maxArrests*400 + 5)
         .attr('text-anchor','middle')
         .attr('dominant-baseline','hanging')
