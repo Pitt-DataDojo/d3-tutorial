@@ -1,7 +1,7 @@
 # d3-tutorial
 
 
-### CMU Tech4Society (inital workshop)
+### CMU Tech4Society (inital workshop inspired by)
 http://www.tech4society.group/
 
 ## Vector vs. raster graphics
@@ -32,6 +32,7 @@ http://www.tech4society.group/
 - circle
 - ellipse
 - line
+- path
 - polyline
 - polygon
 - text
