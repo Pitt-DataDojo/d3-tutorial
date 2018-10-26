@@ -2,7 +2,7 @@
 
 #### Data Dojo
 <div>
-<img src="https://doc-0g-7c-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/gb6o0rc4lhq021lr97h5fsl8qnra5ust/1540562400000/17668014132759662909/*/0B4xUJa9N9h_6OEdWWnQ0R0NhVUE?e=view" width="200">
+<img src="https://doc-0g-7c-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/gb6o0rc4lhq021lr97h5fsl8qnra5ust/1540562400000/17668014132759662909/*/0B4xUJa9N9h_6OEdWWnQ0R0NhVUE?e=view" width="300">
 </div>
 
 #### CMU Tech4Society (inital workshop inspired by)
